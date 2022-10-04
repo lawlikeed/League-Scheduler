@@ -28,11 +28,13 @@ team1_op_list.create_ops(list_of_teams)
 print(type(team1_op_list))
 print(type(team1_op_list.opponents))
 print(type(team1_op_list.opponents[0]))
-for i in list_of_teams:
-    print(i.name)
+for team in list_of_teams:
+    print(team.name)
 
-for i in team1_op_list.opponents:
-    print('Team1 Opponent List: '+i)
+temp_list = (team1_op_list.opponents)
+#print(temp_list)
+print('Team1 Opponent List:' , temp_list)
+#print('Team1 Opponent List: ', *team1_op_list.opponents, sep= ', ')
 
 
 
