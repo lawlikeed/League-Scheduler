@@ -34,8 +34,6 @@ for i in list_of_teams:
 for i in team1_op_list.opponents:
     print('Team1 Opponent List: '+i)
 
-for i in range(team1_op_list.opponents):
-    print(i.name)
 
 
 
