@@ -9,8 +9,9 @@ class Team:
     def create_ops(self, teams):
         for team in teams:
             if team.name == self.name:
-                pass            
-            self.opponents.append(team.name)
+                pass
+            else:
+                self.opponents.append(team.name)
        
        
 
