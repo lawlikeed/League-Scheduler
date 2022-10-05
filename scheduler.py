@@ -20,34 +20,8 @@ print('All Registered Teams')
 for team in list_of_teams: 
     print('*'+team.name)
 
-# Creat opponent list
-team1_op_list = list_of_teams[0]
-print('\n'+list_of_teams[0].name+'\n')
-team1_op_list.create_ops(list_of_teams)
 
-print(type(team1_op_list))
-print(type(team1_op_list.opponents))
-print(type(team1_op_list.opponents[0]))
+#Build all teams opponents list and output list
 for team in list_of_teams:
-    print(team.name)
-
-temp_list = (team1_op_list.opponents)
-#print(temp_list)
-print('Team1 Opponent List:' , temp_list)
-#print('Team1 Opponent List: ', *team1_op_list.opponents, sep= ', ')
-
-
-
-
-
-
-
-
-
-
-# Output the list of opponents for each team 
-# for i in list_of_teams: 
-#     print(i.name+"'s opponents: ")
-#     for j in list_of_teams: 
-        
-#         pass
+    team.create_ops(list_of_teams)
+    print(team.name+"'s","Oppenent List:", team.opponents)
