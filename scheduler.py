@@ -1,17 +1,6 @@
 from imports import *
 
-def round_robin(team_list):
-    for i in range(1, num_of_days+1):  
-        prev = ('-1', '-1')  
-        print('-----Day',i,'line up-----')
-        for j in range(int(total_matches/num_of_days)):
-            # Choose a random tuple from list of matches
-            match = random.choice(team_list)
-            # Display first team in tuple
-            print(match)  
-            # Update list  
-            team_list.remove(match)      
-            prev = match
+
 
 
 
@@ -47,7 +36,7 @@ print(original_list , '\n')
 
 # Display matche line ups
 while True:
-    round_robin(original_list.copy())
+    round_robin(original_list.copy(), num_of_days, total_matches)
     cont = input('Would you like to generate a new schedule? (Y/N): ')
     if cont.upper() == 'N':
         break
