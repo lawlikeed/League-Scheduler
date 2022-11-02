@@ -1,9 +1,5 @@
 from imports import *
 
-
-
-
-
 num_of_teams = 4#int(input ('How many teams?: '))
 num_of_days = 2#int(input ('How many days?: '))
 num_of_fields = 1#int(input ('How many fields?: '))
